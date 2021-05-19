@@ -1,0 +1,29 @@
+package com.rodrigo.user.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.rodrigo.user.VO.ResponseTemplateVO;
+import com.rodrigo.user.entity.User;
+import com.rodrigo.user.repository.UserRepository;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class UserService {
+	
+	@Autowired
+	private UserRepository userRepository;
+
+	public User saveUser(User user) {
+		log.info("Inside saveUser of UserService");
+		return userRepository.save(user);
+	}
+
+	public ResponseTemplateVO getUserWithDepartment(Long userId) {
+		ResponseTemplateVO vo = new ResponseTemplateVO();
+		User user = userRepository.findByUserId(userId);
+		RestTemplate
+	}
+}

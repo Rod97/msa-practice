@@ -1,0 +1,5 @@
+package com.rodrigo.user.repository;
+
+public interface UserRepository {
+
+}

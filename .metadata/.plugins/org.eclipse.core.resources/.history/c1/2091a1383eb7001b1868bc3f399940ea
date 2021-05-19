@@ -1,0 +1,5 @@
+package com.rodrigo.department.service;
+
+public class DepartmentService {
+
+}

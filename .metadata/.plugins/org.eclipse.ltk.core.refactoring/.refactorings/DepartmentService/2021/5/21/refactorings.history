@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.rodrigo.department.entity.Depertment&apos; to &apos;Department&apos;&#x0D;&#x0A;- Original project: &apos;DepartmentService&apos;&#x0D;&#x0A;- Original element: &apos;com.rodrigo.department.entity.Depertment&apos;&#x0D;&#x0A;- Renamed element: &apos;com.rodrigo.department.entity.Department&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Depertment&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.rodrigo.department.entity{Depertment.java[Depertment" matchStrategy="1" name="Department" qualified="false" references="true" similarDeclarations="false" stamp="1621276260640" textual="false" version="1.0"/>
+</session>

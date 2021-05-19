@@ -1,0 +1,5 @@
+package com.rodrigo.cloud.gateway.controller;
+
+public class FallBackMethodController {
+
+}
