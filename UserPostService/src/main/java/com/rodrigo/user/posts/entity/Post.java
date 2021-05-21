@@ -1,6 +1,4 @@
-package com.rodrigo.user.entity;
-
-import java.util.ArrayList;
+package com.rodrigo.user.posts.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,16 +11,14 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class User {
-
+@AllArgsConstructor
+public class Post {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long postId;
+	private String title;
+	private String content;
 	private Long userId;
-	private String firstName;
-	private String lastName;
-	private String email;
-	private Long departmentId;
-	private ArrayList<Integer> postIds;
 }

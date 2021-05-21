@@ -24,7 +24,15 @@ spring:
             args:
               name: DEPARTMENT-SERVICE
               fallbackuri: forward:/departmentServiceFallBack
-              
+      - id: USERPOSTS-SERVICE
+        uri: lb://USERPOSTS-SERVICE
+        predicates:
+          - Path=/posts/**  
+        filters: 
+          - name: CircuitBreaker
+            args:
+              name: USERPOSTS-SERVICE 
+              fallbackuri: forward:/departmentServiceFallBack          
 management: 
   endpoints:
     web:
